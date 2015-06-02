@@ -15,6 +15,12 @@
 		EB352C5D1B128F060022D0F5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB352C5C1B128F060022D0F5 /* Images.xcassets */; };
 		EB352C601B128F060022D0F5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB352C5E1B128F060022D0F5 /* LaunchScreen.xib */; };
 		EB352C6C1B128F070022D0F5 /* ProfileZooTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB352C6B1B128F070022D0F5 /* ProfileZooTests.m */; };
+		EBE101CD1B1D44CE0054689F /* PetDataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE101CC1B1D44CE0054689F /* PetDataBaseManager.m */; };
+		EBE805F61B1C0479005E9265 /* Remider.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE805F51B1C0479005E9265 /* Remider.m */; };
+		EBE805F91B1C078D005E9265 /* ActivityLog.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE805F81B1C078D005E9265 /* ActivityLog.m */; };
+		EBE805FC1B1C07D7005E9265 /* ReminderType.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE805FB1B1C07D7005E9265 /* ReminderType.m */; };
+		EBE805FF1B1C0951005E9265 /* Pet.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE805FE1B1C0951005E9265 /* Pet.m */; };
+		EBE806021B1C0964005E9265 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE806011B1C0964005E9265 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +48,18 @@
 		EB352C651B128F070022D0F5 /* ProfileZooTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProfileZooTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB352C6A1B128F070022D0F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB352C6B1B128F070022D0F5 /* ProfileZooTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileZooTests.m; sourceTree = "<group>"; };
+		EBE101CB1B1D44CE0054689F /* PetDataBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PetDataBaseManager.h; path = ProfileZoo/Services/PetDataBaseManager.h; sourceTree = "<group>"; };
+		EBE101CC1B1D44CE0054689F /* PetDataBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PetDataBaseManager.m; path = ProfileZoo/Services/PetDataBaseManager.m; sourceTree = "<group>"; };
+		EBE805F41B1C0479005E9265 /* Remider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Remider.h; path = ProfileZoo/Model/Remider.h; sourceTree = "<group>"; };
+		EBE805F51B1C0479005E9265 /* Remider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Remider.m; path = ProfileZoo/Model/Remider.m; sourceTree = "<group>"; };
+		EBE805F71B1C078D005E9265 /* ActivityLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActivityLog.h; path = ProfileZoo/Model/ActivityLog.h; sourceTree = "<group>"; };
+		EBE805F81B1C078D005E9265 /* ActivityLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActivityLog.m; path = ProfileZoo/Model/ActivityLog.m; sourceTree = "<group>"; };
+		EBE805FA1B1C07D7005E9265 /* ReminderType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReminderType.h; path = ProfileZoo/Model/ReminderType.h; sourceTree = "<group>"; };
+		EBE805FB1B1C07D7005E9265 /* ReminderType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReminderType.m; path = ProfileZoo/Model/ReminderType.m; sourceTree = "<group>"; };
+		EBE805FD1B1C0951005E9265 /* Pet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Pet.h; path = ProfileZoo/Model/Pet.h; sourceTree = "<group>"; };
+		EBE805FE1B1C0951005E9265 /* Pet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Pet.m; path = ProfileZoo/Model/Pet.m; sourceTree = "<group>"; };
+		EBE806001B1C0964005E9265 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = ProfileZoo/Model/Person.h; sourceTree = "<group>"; };
+		EBE806011B1C0964005E9265 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = ProfileZoo/Model/Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +83,8 @@
 		EB352C401B128F060022D0F5 = {
 			isa = PBXGroup;
 			children = (
+				EBBB15CE1B129F3500924963 /* Services */,
+				EBA0FAC51B129AD100E8196A /* Model */,
 				EB352C4B1B128F060022D0F5 /* ProfileZoo */,
 				EB352C681B128F070022D0F5 /* ProfileZooTests */,
 				EB352C4A1B128F060022D0F5 /* Products */,
@@ -120,6 +140,32 @@
 				EB352C6A1B128F070022D0F5 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EBA0FAC51B129AD100E8196A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EBE805F41B1C0479005E9265 /* Remider.h */,
+				EBE805F51B1C0479005E9265 /* Remider.m */,
+				EBE805F71B1C078D005E9265 /* ActivityLog.h */,
+				EBE805F81B1C078D005E9265 /* ActivityLog.m */,
+				EBE805FA1B1C07D7005E9265 /* ReminderType.h */,
+				EBE805FB1B1C07D7005E9265 /* ReminderType.m */,
+				EBE805FD1B1C0951005E9265 /* Pet.h */,
+				EBE805FE1B1C0951005E9265 /* Pet.m */,
+				EBE806001B1C0964005E9265 /* Person.h */,
+				EBE806011B1C0964005E9265 /* Person.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EBBB15CE1B129F3500924963 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EBE101CB1B1D44CE0054689F /* PetDataBaseManager.h */,
+				EBE101CC1B1D44CE0054689F /* PetDataBaseManager.m */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,9 +269,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB352C551B128F060022D0F5 /* ProfileZoo.xcdatamodeld in Sources */,
+				EBE805FF1B1C0951005E9265 /* Pet.m in Sources */,
+				EBE805FC1B1C07D7005E9265 /* ReminderType.m in Sources */,
 				EB352C521B128F060022D0F5 /* AppDelegate.m in Sources */,
+				EBE805F61B1C0479005E9265 /* Remider.m in Sources */,
 				EB352C581B128F060022D0F5 /* ViewController.m in Sources */,
+				EBE806021B1C0964005E9265 /* Person.m in Sources */,
 				EB352C4F1B128F060022D0F5 /* main.m in Sources */,
+				EBE101CD1B1D44CE0054689F /* PetDataBaseManager.m in Sources */,
+				EBE805F91B1C078D005E9265 /* ActivityLog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +468,7 @@
 				EB352C711B128F070022D0F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB352C721B128F070022D0F5 /* Build configuration list for PBXNativeTarget "ProfileZooTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +477,7 @@
 				EB352C741B128F070022D0F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
