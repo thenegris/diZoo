@@ -14,4 +14,8 @@
 @property (nonatomic, assign) BOOL agreementChecked;
 @property (nonatomic, strong, readwrite) NSArray *pets;
 
+
+- (instancetype)initWithUID:(NSString *)uid;
+- (instancetype)initWithUID:(NSString *) uid agreementChecked:(BOOL)agreementChecked pets:(NSArray *)pets;
+
 @end

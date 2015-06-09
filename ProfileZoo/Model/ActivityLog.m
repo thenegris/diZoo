@@ -10,4 +10,18 @@
 
 @implementation ActivityLog
 
+
+-(instancetype) initWithType:(NSString *)remainder dateDONE:(NSDate *)dateDONE
+{
+    self = [super init];
+    
+    if (self) {
+        _typeRemainder = remainder;
+        _dateDONE = dateDONE;
+    }
+    
+    return self;
+}
+
+
 @end

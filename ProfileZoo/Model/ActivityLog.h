@@ -11,7 +11,10 @@
 
 @interface ActivityLog : NSObject
 
-@property (nonatomic, copy) ReminderType *remainder;
-@property (nonatomic, copy) NSDate *dateDone;
+@property (nonatomic, copy) NSString *typeRemainder;
+@property (nonatomic, copy) NSDate *dateDONE;
+
+
+-(instancetype) initWithType:(NSString *)remainder dateDONE:(NSDate *)dateDONE;
 
 @end

@@ -18,4 +18,8 @@
 @property (nonatomic, strong, readwrite) NSDictionary *remainders;
 @property (nonatomic, strong, readwrite) NSDictionary *activitylog;
 
+- (instancetype)initWithUID:(NSString *)uid;
+- (instancetype)initWithUID:(NSString *) uid name:(NSString *)name breed:(NSString *)breed dateBirth:(NSDate  *)dateBirth personUID:(NSString *)personUID;
+- (instancetype)initWithUID:(NSString *) uid name:(NSString *)name breed:(NSString *)breed dateBirth:(NSDate  *)dateBirth personUID:(NSString *)personUID remainders:(NSDictionary *)remainders activitylog:(NSDictionary*)activitylog;
+
 @end

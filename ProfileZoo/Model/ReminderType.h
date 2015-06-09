@@ -10,7 +10,11 @@
 
 @interface ReminderType : NSObject
 
-@property (nonatomic, copy) NSString *reminder;
-@property (nonatomic, copy) NSString *reminderBody;
+@property (nonatomic, copy) NSString *ID;
+@property (nonatomic, copy) NSString *type;
+@property (nonatomic, copy) NSString *message;
+
+
+-(instancetype) initWithID:(NSString *)ID Type:(NSString *)type Message:(NSString*)message;
 
 @end

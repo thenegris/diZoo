@@ -11,8 +11,10 @@
 
 @interface Remider : NSObject
 
-@property (nonatomic, copy) ReminderType *remainder;
-@property (nonatomic, copy) NSDate *dateToDo;
-@property (nonatomic, assign) BOOL status;
+@property (nonatomic, copy) NSString *typeRemainder;
+@property (nonatomic, copy) NSDate *dateTODO;
+@property (nonatomic, assign) BOOL statusTODO;
+
+-(instancetype) initWithRemainder:(NSString *)type dateTODO:(NSDate *)dateTODO statusTODO:(BOOL)statusTODO;
 
 @end
