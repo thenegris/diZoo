@@ -22,19 +22,28 @@
     // Override point for customization after application launch.
     
     AgreementViewController *initialViewController = [[AgreementViewController alloc] initWithNibName:@"AgreementViewController" bundle:nil];
-    MainViewController *mainViewController = [[MainViewController alloc] init];
     
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:initialViewController];
     
     CGRect frame = [UIScreen mainScreen].bounds;
     UIWindow *window = [[UIWindow alloc] initWithFrame:frame];
+    window.rootViewController = initialViewController;
+    [window makeKeyAndVisible];
+    self.window = window;
+    
+    /*
+    MainViewController *mainViewController = [[MainViewController alloc] init];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:initialViewController];
+    
+   
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     [tabBarController setViewControllers:@[navController,mainViewController]];
-    
+     CGRect frame = [UIScreen mainScreen].bounds;
+     UIWindow *window = [[UIWindow alloc] initWithFrame:frame];
     window.rootViewController = tabBarController;
     [window makeKeyAndVisible];
     self.window = window;
     
+     */
     
    
 

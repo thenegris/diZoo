@@ -72,8 +72,17 @@
     {
         NSLog(@"button aceptar pressed");
         self.personRegistered = YES;
-        self.mainViewController = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
-       [self.navigationController pushViewController:self.mainViewController animated:YES];
+        MainViewController *mainViewController = [[MainViewController alloc] init];
+        UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:mainViewController];
+        
+        
+        UITabBarController *tabBarController = [[UITabBarController alloc] init];
+        [tabBarController setViewControllers:@[navController]];
+        
+        [self presentViewController:tabBarController animated:YES completion:nil];
+        
+//        self.mainViewController = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
+//       [self.navigationController pushViewController:self.mainViewController animated:YES];
         
     }
 }
