@@ -15,33 +15,54 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dnh-k1-XUx">
-                        <rect key="frame" x="238" y="3" width="58" height="58"/>
+                        <rect key="frame" x="269" y="8" width="43" height="43"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="58" id="d1u-PF-kf7"/>
+                            <constraint firstAttribute="width" constant="43" id="wey-di-fJf"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUX-AS-tRN">
-                        <rect key="frame" x="11" y="34" width="200" height="21"/>
+                        <rect key="frame" x="8" y="30" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ow-oX-3m0">
+                        <rect key="frame" x="58" y="8" width="30" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R73-Dw-JKx">
+                                <rect key="frame" x="10" y="4" width="10" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.30125700331592864" blue="0.36822593262561976" alpha="1" colorSpace="calibratedRGB"/>
+                        <rect key="contentStretch" x="0.44999999999999996" y="0.0" width="1" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="R73-Dw-JKx" secondAttribute="centerX" id="3Em-Nc-leH"/>
+                            <constraint firstAttribute="height" constant="30" id="Mly-lm-OZw"/>
+                            <constraint firstAttribute="centerY" secondItem="R73-Dw-JKx" secondAttribute="centerY" constant="0.5" id="NvB-AC-ajc"/>
+                            <constraint firstAttribute="width" constant="30" id="pxs-ao-iiM"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailingMargin" secondItem="aUX-AS-tRN" secondAttribute="trailing" constant="101" id="4HD-vr-8gm"/>
-                    <constraint firstItem="dnh-k1-XUx" firstAttribute="leading" secondItem="aUX-AS-tRN" secondAttribute="trailing" constant="27" id="DJH-UQ-jQD"/>
-                    <constraint firstAttribute="centerY" secondItem="aUX-AS-tRN" secondAttribute="centerY" constant="-15" id="MdZ-ZK-XdI"/>
-                    <constraint firstAttribute="centerY" secondItem="dnh-k1-XUx" secondAttribute="centerY" constant="-2.5" id="NxC-s5-5Fk"/>
-                    <constraint firstItem="aUX-AS-tRN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="3" id="e9x-01-XWW"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="dnh-k1-XUx" secondAttribute="trailing" constant="16" id="ebS-7L-bdQ"/>
-                    <constraint firstAttribute="centerX" secondItem="dnh-k1-XUx" secondAttribute="centerX" constant="-107" id="fg0-o9-3cX"/>
+                    <constraint firstItem="3Ow-oX-3m0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="5Er-La-wd0"/>
+                    <constraint firstItem="dnh-k1-XUx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="F2Q-HR-vhU"/>
+                    <constraint firstItem="dnh-k1-XUx" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Ogk-rQ-Ltz"/>
+                    <constraint firstItem="aUX-AS-tRN" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="QG5-Dp-1jW"/>
+                    <constraint firstItem="3Ow-oX-3m0" firstAttribute="leading" secondItem="aUX-AS-tRN" secondAttribute="trailing" constant="8" id="dTz-Re-3Pc"/>
+                    <constraint firstItem="dnh-k1-XUx" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="jYL-vi-qnI"/>
+                    <constraint firstItem="aUX-AS-tRN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="q8g-I4-pvX"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="CounterView" destination="3Ow-oX-3m0" id="M8U-JK-8uG"/>
+                <outlet property="CouterLabel" destination="R73-Dw-JKx" id="vyq-1l-L8C"/>
                 <outlet property="namePetLabel" destination="aUX-AS-tRN" id="9vA-PV-HTH"/>
                 <outlet property="petImageView" destination="dnh-k1-XUx" id="26f-jV-gcc"/>
             </connections>
-            <point key="canvasLocation" x="280" y="226.5"/>
+            <point key="canvasLocation" x="283" y="206"/>
         </tableViewCell>
     </objects>
 </document>

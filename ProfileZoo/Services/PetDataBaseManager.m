@@ -7,6 +7,7 @@
 //
 
 #import "PetDataBaseManager.h"
+#import "Remider.h"
 
 @interface PetDataBaseManager ()
 
@@ -47,6 +48,20 @@
         
         _mutablePets = [@[pet1,pet2] mutableCopy];
         _person.pets = [_mutablePets copy];
+        
+        Remider *remainder1 = [[Remider alloc] initWithRemainder:@"Ya es hora de visitar el veterinario" dateTODO:[NSDate date] statusTODO: NO];
+        
+        Remider *remainder2 = [[Remider alloc] initWithRemainder:@"Dia de baño" dateTODO:[NSDate date] statusTODO: NO];
+        
+        Remider *remainder3 = [[Remider alloc] initWithRemainder:@"Dia de baño" dateTODO:[NSDate date] statusTODO: NO];
+        
+        
+        NSDictionary *remaindersPet1 = @{[NSDate date] : @[remainder1, remainder2],
+                                        [NSDate date] : @[remainder3]};
+        pet1.remainders = remaindersPet1;
+                                         
+        NSDictionary *remaindersPet2 = @{[NSDate date] : @[remainder1]};
+        pet2.remainders = remaindersPet2;
         
         
         [self updatePets];

@@ -9,19 +9,26 @@
 /* Begin PBXBuildFile section */
 		EB0F6EC11B2643D8001AFFB9 /* tab_icon_favorites.png in Resources */ = {isa = PBXBuildFile; fileRef = EB0F6EBB1B2643D8001AFFB9 /* tab_icon_favorites.png */; };
 		EB0F6EC21B2643D8001AFFB9 /* tab_icon_favorites@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB0F6EBC1B2643D8001AFFB9 /* tab_icon_favorites@2x.png */; };
-		EB0F6EC31B2643D8001AFFB9 /* tab_icon_feed.png in Resources */ = {isa = PBXBuildFile; fileRef = EB0F6EBD1B2643D8001AFFB9 /* tab_icon_feed.png */; };
-		EB0F6EC41B2643D8001AFFB9 /* tab_icon_feed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB0F6EBE1B2643D8001AFFB9 /* tab_icon_feed@2x.png */; };
-		EB0F6EC51B2643D8001AFFB9 /* tab_icon_profile.png in Resources */ = {isa = PBXBuildFile; fileRef = EB0F6EBF1B2643D8001AFFB9 /* tab_icon_profile.png */; };
-		EB0F6EC61B2643D8001AFFB9 /* tab_icon_profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB0F6EC01B2643D8001AFFB9 /* tab_icon_profile@2x.png */; };
 		EB0F6ED01B264F90001AFFB9 /* PetIdentityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0F6ECE1B264F90001AFFB9 /* PetIdentityTableViewCell.m */; };
 		EB0F6ED11B264F90001AFFB9 /* PetIdentityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB0F6ECF1B264F90001AFFB9 /* PetIdentityTableViewCell.xib */; };
-		EB0F6ED81B26834B001AFFB9 /* profile_catdog.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EB0F6ED71B26834B001AFFB9 /* profile_catdog.jpeg */; };
 		EB352C4F1B128F060022D0F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB352C4E1B128F060022D0F5 /* main.m */; };
 		EB352C521B128F060022D0F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB352C511B128F060022D0F5 /* AppDelegate.m */; };
 		EB352C551B128F060022D0F5 /* ProfileZoo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB352C531B128F060022D0F5 /* ProfileZoo.xcdatamodeld */; };
 		EB352C5D1B128F060022D0F5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB352C5C1B128F060022D0F5 /* Images.xcassets */; };
 		EB352C601B128F060022D0F5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB352C5E1B128F060022D0F5 /* LaunchScreen.xib */; };
 		EB352C6C1B128F070022D0F5 /* ProfileZooTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB352C6B1B128F070022D0F5 /* ProfileZooTests.m */; };
+		EBE0D1281B27D43E00D60144 /* tab_icon_profile_dinosaur.png in Resources */ = {isa = PBXBuildFile; fileRef = EBE0D1271B27D43E00D60144 /* tab_icon_profile_dinosaur.png */; };
+		EBE0D12B1B27DB5400D60144 /* tab_icon_appointment_reminders_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = EBE0D1291B27DB5400D60144 /* tab_icon_appointment_reminders_filled.png */; };
+		EBE0D12C1B27DB5400D60144 /* tab_icon_appointment reminders.png in Resources */ = {isa = PBXBuildFile; fileRef = EBE0D12A1B27DB5400D60144 /* tab_icon_appointment reminders.png */; };
+		EBE0D12E1B27DD4900D60144 /* tab_icon_footprint_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = EBE0D12D1B27DD4900D60144 /* tab_icon_footprint_filled.png */; };
+		EBE0D1321B27DD9300D60144 /* PetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE0D1301B27DD9300D60144 /* PetsViewController.m */; };
+		EBE0D1331B27DD9300D60144 /* PetsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBE0D1311B27DD9300D60144 /* PetsViewController.xib */; };
+		EBE0D1371B27E03900D60144 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE0D1351B27E03900D60144 /* NewsViewController.m */; };
+		EBE0D1381B27E03900D60144 /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBE0D1361B27E03900D60144 /* NewsViewController.xib */; };
+		EBE0D13A1B27E22300D60144 /* tab_icon_megaphone_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = EBE0D1391B27E22300D60144 /* tab_icon_megaphone_filled.png */; };
+		EBE0D13C1B27E43900D60144 /* tab_icon_settings_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = EBE0D13B1B27E43900D60144 /* tab_icon_settings_filled.png */; };
+		EBE0D1401B27E48000D60144 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE0D13E1B27E48000D60144 /* SettingsViewController.m */; };
+		EBE0D1411B27E48000D60144 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBE0D13F1B27E48000D60144 /* SettingsViewController.xib */; };
 		EBE101CD1B1D44CE0054689F /* PetDataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE101CC1B1D44CE0054689F /* PetDataBaseManager.m */; };
 		EBE15D3D1B253E0A00C4968F /* AgreementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE15D3B1B253E0A00C4968F /* AgreementViewController.m */; };
 		EBE15D3E1B253E0A00C4968F /* AgreementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBE15D3C1B253E0A00C4968F /* AgreementViewController.xib */; };
@@ -47,14 +54,9 @@
 /* Begin PBXFileReference section */
 		EB0F6EBB1B2643D8001AFFB9 /* tab_icon_favorites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tab_icon_favorites.png; path = Images/tab_icon_favorites.png; sourceTree = "<group>"; };
 		EB0F6EBC1B2643D8001AFFB9 /* tab_icon_favorites@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tab_icon_favorites@2x.png"; path = "Images/tab_icon_favorites@2x.png"; sourceTree = "<group>"; };
-		EB0F6EBD1B2643D8001AFFB9 /* tab_icon_feed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tab_icon_feed.png; path = Images/tab_icon_feed.png; sourceTree = "<group>"; };
-		EB0F6EBE1B2643D8001AFFB9 /* tab_icon_feed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tab_icon_feed@2x.png"; path = "Images/tab_icon_feed@2x.png"; sourceTree = "<group>"; };
-		EB0F6EBF1B2643D8001AFFB9 /* tab_icon_profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tab_icon_profile.png; path = Images/tab_icon_profile.png; sourceTree = "<group>"; };
-		EB0F6EC01B2643D8001AFFB9 /* tab_icon_profile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tab_icon_profile@2x.png"; path = "Images/tab_icon_profile@2x.png"; sourceTree = "<group>"; };
 		EB0F6ECD1B264F90001AFFB9 /* PetIdentityTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PetIdentityTableViewCell.h; path = ProfileZoo/Views/PetIdentityTableViewCell.h; sourceTree = "<group>"; };
 		EB0F6ECE1B264F90001AFFB9 /* PetIdentityTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PetIdentityTableViewCell.m; path = ProfileZoo/Views/PetIdentityTableViewCell.m; sourceTree = "<group>"; };
 		EB0F6ECF1B264F90001AFFB9 /* PetIdentityTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PetIdentityTableViewCell.xib; path = ProfileZoo/Views/PetIdentityTableViewCell.xib; sourceTree = "<group>"; };
-		EB0F6ED71B26834B001AFFB9 /* profile_catdog.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = profile_catdog.jpeg; path = Images/profile_catdog.jpeg; sourceTree = "<group>"; };
 		EB352C491B128F060022D0F5 /* ProfileZoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProfileZoo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB352C4D1B128F060022D0F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB352C4E1B128F060022D0F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -66,6 +68,21 @@
 		EB352C651B128F070022D0F5 /* ProfileZooTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProfileZooTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB352C6A1B128F070022D0F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB352C6B1B128F070022D0F5 /* ProfileZooTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileZooTests.m; sourceTree = "<group>"; };
+		EBE0D1271B27D43E00D60144 /* tab_icon_profile_dinosaur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tab_icon_profile_dinosaur.png; path = Images/tab_icon_profile_dinosaur.png; sourceTree = "<group>"; };
+		EBE0D1291B27DB5400D60144 /* tab_icon_appointment_reminders_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tab_icon_appointment_reminders_filled.png; path = Images/tab_icon_appointment_reminders_filled.png; sourceTree = "<group>"; };
+		EBE0D12A1B27DB5400D60144 /* tab_icon_appointment reminders.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tab_icon_appointment reminders.png"; path = "Images/tab_icon_appointment reminders.png"; sourceTree = "<group>"; };
+		EBE0D12D1B27DD4900D60144 /* tab_icon_footprint_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tab_icon_footprint_filled.png; path = Images/tab_icon_footprint_filled.png; sourceTree = "<group>"; };
+		EBE0D12F1B27DD9300D60144 /* PetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PetsViewController.h; path = ProfileZoo/ViewControllers/PetsViewController.h; sourceTree = "<group>"; };
+		EBE0D1301B27DD9300D60144 /* PetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PetsViewController.m; path = ProfileZoo/ViewControllers/PetsViewController.m; sourceTree = "<group>"; };
+		EBE0D1311B27DD9300D60144 /* PetsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PetsViewController.xib; path = ProfileZoo/ViewControllers/PetsViewController.xib; sourceTree = "<group>"; };
+		EBE0D1341B27E03900D60144 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsViewController.h; path = ProfileZoo/ViewControllers/NewsViewController.h; sourceTree = "<group>"; };
+		EBE0D1351B27E03900D60144 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsViewController.m; path = ProfileZoo/ViewControllers/NewsViewController.m; sourceTree = "<group>"; };
+		EBE0D1361B27E03900D60144 /* NewsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NewsViewController.xib; path = ProfileZoo/ViewControllers/NewsViewController.xib; sourceTree = "<group>"; };
+		EBE0D1391B27E22300D60144 /* tab_icon_megaphone_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tab_icon_megaphone_filled.png; path = Images/tab_icon_megaphone_filled.png; sourceTree = "<group>"; };
+		EBE0D13B1B27E43900D60144 /* tab_icon_settings_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tab_icon_settings_filled.png; path = Images/tab_icon_settings_filled.png; sourceTree = "<group>"; };
+		EBE0D13D1B27E48000D60144 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsViewController.h; path = ProfileZoo/ViewControllers/SettingsViewController.h; sourceTree = "<group>"; };
+		EBE0D13E1B27E48000D60144 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsViewController.m; path = ProfileZoo/ViewControllers/SettingsViewController.m; sourceTree = "<group>"; };
+		EBE0D13F1B27E48000D60144 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SettingsViewController.xib; path = ProfileZoo/ViewControllers/SettingsViewController.xib; sourceTree = "<group>"; };
 		EBE101CB1B1D44CE0054689F /* PetDataBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PetDataBaseManager.h; path = ProfileZoo/Services/PetDataBaseManager.h; sourceTree = "<group>"; };
 		EBE101CC1B1D44CE0054689F /* PetDataBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PetDataBaseManager.m; path = ProfileZoo/Services/PetDataBaseManager.m; sourceTree = "<group>"; };
 		EBE15D3A1B253E0A00C4968F /* AgreementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AgreementViewController.h; path = ProfileZoo/ViewControllers/AgreementViewController.h; sourceTree = "<group>"; };
@@ -107,13 +124,14 @@
 		EB0F6EBA1B26438F001AFFB9 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				EB0F6ED71B26834B001AFFB9 /* profile_catdog.jpeg */,
+				EBE0D13B1B27E43900D60144 /* tab_icon_settings_filled.png */,
+				EBE0D1391B27E22300D60144 /* tab_icon_megaphone_filled.png */,
+				EBE0D12D1B27DD4900D60144 /* tab_icon_footprint_filled.png */,
+				EBE0D1291B27DB5400D60144 /* tab_icon_appointment_reminders_filled.png */,
+				EBE0D12A1B27DB5400D60144 /* tab_icon_appointment reminders.png */,
+				EBE0D1271B27D43E00D60144 /* tab_icon_profile_dinosaur.png */,
 				EB0F6EBB1B2643D8001AFFB9 /* tab_icon_favorites.png */,
 				EB0F6EBC1B2643D8001AFFB9 /* tab_icon_favorites@2x.png */,
-				EB0F6EBD1B2643D8001AFFB9 /* tab_icon_feed.png */,
-				EB0F6EBE1B2643D8001AFFB9 /* tab_icon_feed@2x.png */,
-				EB0F6EBF1B2643D8001AFFB9 /* tab_icon_profile.png */,
-				EB0F6EC01B2643D8001AFFB9 /* tab_icon_profile@2x.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -225,6 +243,15 @@
 				EBEBC7AE1B25F7D400CD9483 /* MainViewController.h */,
 				EBEBC7AF1B25F7D400CD9483 /* MainViewController.m */,
 				EBEBC7B01B25F7D400CD9483 /* MainViewController.xib */,
+				EBE0D12F1B27DD9300D60144 /* PetsViewController.h */,
+				EBE0D1301B27DD9300D60144 /* PetsViewController.m */,
+				EBE0D1311B27DD9300D60144 /* PetsViewController.xib */,
+				EBE0D1341B27E03900D60144 /* NewsViewController.h */,
+				EBE0D1351B27E03900D60144 /* NewsViewController.m */,
+				EBE0D1361B27E03900D60144 /* NewsViewController.xib */,
+				EBE0D13D1B27E48000D60144 /* SettingsViewController.h */,
+				EBE0D13E1B27E48000D60144 /* SettingsViewController.m */,
+				EBE0D13F1B27E48000D60144 /* SettingsViewController.xib */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -310,17 +337,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB352C601B128F060022D0F5 /* LaunchScreen.xib in Resources */,
+				EBE0D1381B27E03900D60144 /* NewsViewController.xib in Resources */,
 				EB352C5D1B128F060022D0F5 /* Images.xcassets in Resources */,
+				EBE0D1331B27DD9300D60144 /* PetsViewController.xib in Resources */,
 				EB0F6EC11B2643D8001AFFB9 /* tab_icon_favorites.png in Resources */,
-				EB0F6ED81B26834B001AFFB9 /* profile_catdog.jpeg in Resources */,
-				EB0F6EC41B2643D8001AFFB9 /* tab_icon_feed@2x.png in Resources */,
-				EB0F6EC51B2643D8001AFFB9 /* tab_icon_profile.png in Resources */,
+				EBE0D12E1B27DD4900D60144 /* tab_icon_footprint_filled.png in Resources */,
+				EBE0D12C1B27DB5400D60144 /* tab_icon_appointment reminders.png in Resources */,
+				EBE0D12B1B27DB5400D60144 /* tab_icon_appointment_reminders_filled.png in Resources */,
+				EBE0D13C1B27E43900D60144 /* tab_icon_settings_filled.png in Resources */,
 				EB0F6EC21B2643D8001AFFB9 /* tab_icon_favorites@2x.png in Resources */,
-				EB0F6EC31B2643D8001AFFB9 /* tab_icon_feed.png in Resources */,
+				EBE0D13A1B27E22300D60144 /* tab_icon_megaphone_filled.png in Resources */,
+				EBE0D1411B27E48000D60144 /* SettingsViewController.xib in Resources */,
 				EB0F6ED11B264F90001AFFB9 /* PetIdentityTableViewCell.xib in Resources */,
 				EBE15D3E1B253E0A00C4968F /* AgreementViewController.xib in Resources */,
 				EBEBC7B21B25F7D400CD9483 /* MainViewController.xib in Resources */,
-				EB0F6EC61B2643D8001AFFB9 /* tab_icon_profile@2x.png in Resources */,
+				EBE0D1281B27D43E00D60144 /* tab_icon_profile_dinosaur.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,12 +375,15 @@
 				EBE805FF1B1C0951005E9265 /* Pet.m in Sources */,
 				EBE805FC1B1C07D7005E9265 /* ReminderType.m in Sources */,
 				EB352C521B128F060022D0F5 /* AppDelegate.m in Sources */,
+				EBE0D1321B27DD9300D60144 /* PetsViewController.m in Sources */,
 				EBE805F61B1C0479005E9265 /* Remider.m in Sources */,
 				EBE806021B1C0964005E9265 /* Person.m in Sources */,
 				EB352C4F1B128F060022D0F5 /* main.m in Sources */,
 				EBE101CD1B1D44CE0054689F /* PetDataBaseManager.m in Sources */,
 				EBE805F91B1C078D005E9265 /* ActivityLog.m in Sources */,
+				EBE0D1401B27E48000D60144 /* SettingsViewController.m in Sources */,
 				EBE15D3D1B253E0A00C4968F /* AgreementViewController.m in Sources */,
+				EBE0D1371B27E03900D60144 /* NewsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

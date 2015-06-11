@@ -49,7 +49,6 @@
     
     
     if(self){
-        
         _remainders = remainders;
         _activitylog = activitylog;
     }
