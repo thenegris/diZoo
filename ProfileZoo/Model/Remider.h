@@ -14,7 +14,8 @@
 @property (nonatomic, copy) NSString *typeRemainder;
 @property (nonatomic, copy) NSDate *dateTODO;
 @property (nonatomic, assign) BOOL statusTODO;
+@property (nonatomic, copy) NSString *message;
 
--(instancetype) initWithRemainder:(NSString *)type dateTODO:(NSDate *)dateTODO statusTODO:(BOOL)statusTODO;
+-(instancetype) initWithRemainder: (NSString *)message type:(NSString *)type dateTODO:(NSDate *) dateTODO statusTODO:(BOOL)statusTODO ;
 
 @end

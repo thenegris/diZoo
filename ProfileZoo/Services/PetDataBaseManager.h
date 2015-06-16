@@ -22,5 +22,6 @@
 - (Pet *)getPetWithUID:(NSString *)UID;
 - (NSInteger)getNumberOfPets;
 - (void)updatePets;
+- (void)loadRemainderTypes;
 
 @end

@@ -42,13 +42,13 @@ const CGFloat leftMargin = 20;
 //    [self.view addConstraints:@[xPos]];
     
     self.declineButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    self.declineButton.frame = CGRectMake(80, 540, 80, 44);
+    self.declineButton.frame = CGRectMake(80, 400, 80, 44);
     [self.declineButton setTitle:@"Declinar" forState:UIControlStateNormal];
     [self.declineButton addTarget:self action:@selector(buttonAgreementLicensePressed:) forControlEvents:UIControlEventTouchUpInside];
     
     self.agreeButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     //CGFloat xPoint = self.view.frame.size.width;
-    self.agreeButton.frame = CGRectMake(200, 540, 80, 44);
+    self.agreeButton.frame = CGRectMake(200, 400, 80, 44);
     [self.agreeButton setTitle:@"Aceptar" forState:UIControlStateNormal];
     [self.agreeButton addTarget:self action:@selector(buttonAgreementLicensePressed:) forControlEvents:UIControlEventTouchUpInside];
     

@@ -12,9 +12,8 @@
 
 @property (nonatomic, copy) NSString *ID;
 @property (nonatomic, copy) NSString *type;
-@property (nonatomic, copy) NSString *message;
+@property (nonatomic, copy) NSString *icon;
 
-
--(instancetype) initWithID:(NSString *)ID Type:(NSString *)type Message:(NSString*)message;
+-(instancetype) initWithID:(NSString *)ID type:(NSString *)type;
 
 @end

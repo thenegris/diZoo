@@ -12,8 +12,8 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *petImageView;
 @property (weak, nonatomic) IBOutlet UILabel *namePetLabel;
-@property (weak, nonatomic) IBOutlet UIView *CounterView;
-@property (weak, nonatomic) IBOutlet UILabel *CouterLabel;
+@property (weak, nonatomic) IBOutlet UIView *counterView;
+@property (weak, nonatomic) IBOutlet UILabel *couterLabel;
 
 + (CGFloat)heightForCell;
 @end

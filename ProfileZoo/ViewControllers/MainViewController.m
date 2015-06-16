@@ -10,16 +10,22 @@
 #import "AgreementViewController.h"
 #import "PetIdentityTableViewCell.h"
 #import "PetDataBaseManager.h"
+#import "Remider.h"
+#import "ActivityViewController.h"
+#import "PetProfileViewController.h"
+#import "Pet.h"
 
 @interface MainViewController ()
 
+@property (nonatomic,strong) ActivityViewController *activityViewController;
+@property (nonatomic,strong) PetProfileViewController *petProfileController;
 
 @end
 
 @implementation MainViewController
 
 NSString * const kPetIdentityCellIdentifier = @"petIdentityCellIdentifier";
-NSArray *pets;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -38,15 +44,33 @@ NSArray *pets;
     
     UINib *cellNib = [UINib nibWithNibName:@"PetIdentityTableViewCell" bundle:nil];
     [self.remainderTablaView registerNib:cellNib forCellReuseIdentifier:kPetIdentityCellIdentifier];
-    
-    pets = [PetDataBaseManager sharedPetManager].person.pets;
-
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+#pragma marks - lazy instanciacion
+- (PetProfileViewController*) petProfileController {
+    
+    if (_petProfileController == nil) {
+        _petProfileController = [[PetProfileViewController alloc]initWithNibName:@"PetProfileViewController" bundle:nil];
+    }
+    
+    return _petProfileController;
+}
+
+- (ActivityViewController *) activityViewController {
+
+    if (_activityViewController == nil) {
+        _activityViewController = [[ActivityViewController alloc] initWithNibName:@"ActivityViewController" bundle:nil];
+    }
+ 
+    return _activityViewController;
+}
+
 
 #pragma marks - methods protocol datasource
 //Initialize and setup each cell in your tableView
@@ -60,8 +84,10 @@ NSArray *pets;
          cell = [tableView dequeueReusableCellWithIdentifier:kPetIdentityCellIdentifier];
     }
     else {
-        
-    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
+        cell = [tableView dequeueReusableCellWithIdentifier:@"CellRemainder"];
+        if(cell==nil){
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"CellRemainder"];
+        }
     }
     return cell;
 }
@@ -69,12 +95,16 @@ NSArray *pets;
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSInteger indexRow = indexPath.row;
-    Pet *pet = [pets objectAtIndex:indexRow];
+    NSInteger section = indexPath.section;
+   
+    Pet *pet= [[PetDataBaseManager sharedPetManager].person.pets objectAtIndex:section];
     
     if (indexRow==0) {
         PetIdentityTableViewCell *petIdentityCell = (PetIdentityTableViewCell *)cell;
        
         petIdentityCell.namePetLabel.text = pet.name;
+        petIdentityCell.couterLabel.text = [NSString stringWithFormat:@"%ld", (unsigned long)pet.remainders.count];
+        
         //    NSString *imageName = [NSString stringWithFormat:@"%ld", (long)contact.ID];
         //    UIImage *profilePic = [FileManager loadImageWithName:imageName];
         //    if (profilePic == nil) {
@@ -84,8 +114,8 @@ NSArray *pets;
     }
     else {
         UITableViewCell *petRemaindersCell = (UITableViewCell *) cell;
-        petRemaindersCell.textLabel.text = @"RemainderTst";
-       
+        Remider *remainder = pet.remainders[indexRow - 1];
+        petRemaindersCell.textLabel.text = remainder.message;
     }
     
 }
@@ -98,15 +128,35 @@ NSArray *pets;
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     
-    return pets.count;
+    return [[PetDataBaseManager sharedPetManager] getNumberOfPets];
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    Pet *petRemainders = [pets objectAtIndex:section];
-    return petRemainders.remainders.count;
+    Pet *pet = [[PetDataBaseManager sharedPetManager].person.pets objectAtIndex:section];
+   
+    NSLog(@"Rows in section %lu rows %lu",(long)section, (unsigned long)pet.remainders.count);
+    return pet.remainders.count + 1;
 
 }
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"did select row");
+    
+    //NSInteger section = indexPath.section;
+    NSInteger row = indexPath.row ;
+    //Pet *pet = [[PetDataBaseManager sharedPetManager].person.pets objectAtIndex:section];
+   
+    if (row == 0) {
+        [self.navigationController pushViewController:self.petProfileController animated:YES];
+    }
+    else {
+    
+        [self.navigationController pushViewController:self.activityViewController animated:YES];
+    
+    }
+}
+
 
 /*
 #pragma mark - Navigation

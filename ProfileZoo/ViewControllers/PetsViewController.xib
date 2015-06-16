@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PetsViewController">
             <connections>
+                <outlet property="petsTableView" destination="Y4a-FA-IWT" id="ak2-1y-wnz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,17 +15,21 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8eU-EP-rvh">
-                    <rect key="frame" x="229" y="289" width="42" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Y4a-FA-IWT">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="jne-07-ifC"/>
+                        <outlet property="delegate" destination="-1" id="kfw-Wi-k3k"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="centerY" secondItem="8eU-EP-rvh" secondAttribute="centerY" constant="1" id="NT5-82-3RJ"/>
-                <constraint firstAttribute="centerX" secondItem="8eU-EP-rvh" secondAttribute="centerX" constant="50" id="nYR-f7-HZg"/>
+                <constraint firstAttribute="bottom" secondItem="Y4a-FA-IWT" secondAttribute="bottom" id="0Qs-UB-psx"/>
+                <constraint firstItem="Y4a-FA-IWT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="U61-UA-eCd"/>
+                <constraint firstItem="Y4a-FA-IWT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="UO4-dr-9E4"/>
+                <constraint firstAttribute="trailing" secondItem="Y4a-FA-IWT" secondAttribute="trailing" id="q66-av-Nza"/>
             </constraints>
         </view>
     </objects>

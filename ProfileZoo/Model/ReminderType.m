@@ -12,7 +12,7 @@
 
 
 
--(instancetype) initWithID:(NSString *)ID Type:(NSString *)type Message:(NSString*)message
+-(instancetype) initWithID :(NSString *)ID type:(NSString *)type
 {
    
     self = [super init];
@@ -20,7 +20,7 @@
     if (self) {
         _ID = ID;
         _type = type;
-        _message = message;
+      
     }
     
     return self;

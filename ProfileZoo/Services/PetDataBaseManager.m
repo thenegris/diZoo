@@ -8,10 +8,14 @@
 
 #import "PetDataBaseManager.h"
 #import "Remider.h"
+#import "ReminderType.h"
+#import "Formatter.h"
 
 @interface PetDataBaseManager ()
 
 @property (nonatomic, strong) NSMutableArray *mutablePets;
+@property (nonatomic,strong) NSDictionary *dictionaryTypeRemainder;
+
 @end
 
 @implementation PetDataBaseManager
@@ -42,25 +46,33 @@
         NSString *uuidPet = [[NSUUID UUID] UUIDString];
         NSDate *date = [NSDate date];
         
-        Pet *pet1 = [[Pet alloc] initWithUID:uuidPet name:@"Principe" breed:@"Golden" dateBirth:date personUID: uuidPerson];
         
-        Pet *pet2 = [[Pet alloc] initWithUID:[[NSUUID UUID] UUIDString] name:@"Pelton" breed:@"Boxer" dateBirth:date personUID: uuidPerson];
+        Pet *pet1 = [[Pet alloc] initWithUID:uuidPet name:@"Principe" animal:@"dogs" breed:@"Golden" dateBirth:date personUID: uuidPerson];
+        
+        Pet *pet2 = [[Pet alloc] initWithUID:[[NSUUID UUID] UUIDString] name:@"Pelton" animal:@"dogs" breed:@"Boxer" dateBirth:date personUID: uuidPerson];
         
         _mutablePets = [@[pet1,pet2] mutableCopy];
         _person.pets = [_mutablePets copy];
         
-        Remider *remainder1 = [[Remider alloc] initWithRemainder:@"Ya es hora de visitar el veterinario" dateTODO:[NSDate date] statusTODO: NO];
+        [self loadRemainderTypes];
+        ReminderType *type1 = [_dictionaryTypeRemainder objectForKey:@"1"];
+        ReminderType *type2 = [_dictionaryTypeRemainder objectForKey:@"2"];
+        ReminderType *type3 = [_dictionaryTypeRemainder objectForKey:@"3"];
         
-        Remider *remainder2 = [[Remider alloc] initWithRemainder:@"Dia de baño" dateTODO:[NSDate date] statusTODO: NO];
         
-        Remider *remainder3 = [[Remider alloc] initWithRemainder:@"Dia de baño" dateTODO:[NSDate date] statusTODO: NO];
+        Remider *remainder1 = [[Remider alloc] initWithRemainder:@"Ya es hora de visitar el veterinario" type:type1.ID dateTODO:[NSDate date] statusTODO:NO];
+                               
+        Remider *remainder2 = [[Remider alloc] initWithRemainder:@"Necesita un baño pronto!" type:type2.ID dateTODO:[NSDate date] statusTODO:NO];
+        
+        Remider *remainder3 = [[Remider alloc] initWithRemainder:@"Oye, estas segur@ que tengo comida?" type:type3.ID dateTODO:[NSDate date] statusTODO:NO];
+        
+    
         
         
-        NSDictionary *remaindersPet1 = @{[NSDate date] : @[remainder1, remainder2],
-                                        [NSDate date] : @[remainder3]};
+        NSArray *remaindersPet1 =  @[remainder1, remainder2, remainder3];
         pet1.remainders = remaindersPet1;
                                          
-        NSDictionary *remaindersPet2 = @{[NSDate date] : @[remainder1]};
+        NSArray *remaindersPet2 =  @[remainder2];
         pet2.remainders = remaindersPet2;
         
         
@@ -114,6 +126,15 @@
 - (void)updatePets
 {
     self.person.pets = [self.mutablePets copy];
+}
+
+-(void)loadRemainderTypes
+{
+    
+    ReminderType *type1 = [[ReminderType alloc] initWithID:@"1" type:@"Salud"];
+    ReminderType *type2 = [[ReminderType alloc] initWithID:@"2" type:@"Bienestar" ];
+    ReminderType *type3 = [[ReminderType alloc] initWithID:@"3" type:@"Alimentacion"];
+    self.dictionaryTypeRemainder = @{ @"1":type1, @"2": type2, @"3": type3};
 }
 
 
