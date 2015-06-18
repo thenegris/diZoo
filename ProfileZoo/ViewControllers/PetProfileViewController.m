@@ -10,6 +10,7 @@
 #import "Formatter.h"
 #import "KConstants.h"
 #import "PetDataBaseManager.h"
+#import "FileManager.h"
 
 @interface PetProfileViewController () <UITextFieldDelegate,UIPickerViewDataSource, UIPickerViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
@@ -27,7 +28,7 @@
 
 NSInteger const kNumberOfPickers = 2;
 NSInteger const kDays = 14600; //40 years aprox
-KConstants *constants;
+KConstants *constants; 
 
 
 -(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
@@ -92,6 +93,12 @@ KConstants *constants;
     self.birthDateTextField.inputView = birthDatePick;
     self.birthDateTextField.text = [Formatter formatDate:birthDatePick.date];
         
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [super touchesBegan:touches withEvent:event];
+    [self.view endEditing:YES];
 }
 
 // Called when the date picker changes.
@@ -220,17 +227,20 @@ KConstants *constants;
 
 -(void) loadPet :(Pet *) pet {
     
-   
-  //  if(!self.imagePetView){
-        [self.imagePetView setImage:[UIImage imageNamed:@"tab_icon_profile_dinosaur"]];
-  //  }
+    NSString *imageName = pet.uid;
+    UIImage *profileImage = [FileManager loadImageWithName:imageName];
+    
+    if (profileImage == nil) {
+        
+        profileImage = [UIImage imageNamed:@"tab_icon_profile_dinosaur"];
+    }
+    
+    [self.imagePetView setImage:profileImage];
     
     self.namePetTextField.text = pet.name;
     self.birthDateTextField.text = [Formatter formatDate: pet.dateBirth];
     self.animalSelected = pet.animal;
     self.breedSelected = pet.breed;
-    
-   // [self.breedPickerView selectRow:0 inComponent:1 animated:YES];
     [self.breedPickerView reloadComponent:1];
     
 
@@ -283,8 +293,8 @@ KConstants *constants;
     
         if (self.didTakePicture) {
         
-//            NSString *nameImage = [ NSString stringWithFormat:@"%@",uuid];
-           //  [FileManager writeImageToFile:self.profileImageView.image withName: nameImage];
+            NSString *nameImage = [ NSString stringWithFormat:@"%@",uuid];
+            [FileManager writeImageToFile:self.imagePetView.image withName: nameImage];
         
             self.didTakePicture = NO;
             }

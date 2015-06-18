@@ -11,6 +11,7 @@
 		EB0F6EC21B2643D8001AFFB9 /* tab_icon_favorites@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB0F6EBC1B2643D8001AFFB9 /* tab_icon_favorites@2x.png */; };
 		EB0F6ED01B264F90001AFFB9 /* PetIdentityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0F6ECE1B264F90001AFFB9 /* PetIdentityTableViewCell.m */; };
 		EB0F6ED11B264F90001AFFB9 /* PetIdentityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB0F6ECF1B264F90001AFFB9 /* PetIdentityTableViewCell.xib */; };
+		EB263B131B31A606008062A9 /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB263B121B31A606008062A9 /* FileManager.m */; };
 		EB352C4F1B128F060022D0F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB352C4E1B128F060022D0F5 /* main.m */; };
 		EB352C521B128F060022D0F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB352C511B128F060022D0F5 /* AppDelegate.m */; };
 		EB352C551B128F060022D0F5 /* ProfileZoo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB352C531B128F060022D0F5 /* ProfileZoo.xcdatamodeld */; };
@@ -47,6 +48,12 @@
 		EBEB89771B2E47E20023BBB1 /* KConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = EBEB89761B2E47E20023BBB1 /* KConstants.m */; };
 		EBEBC7B11B25F7D400CD9483 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBEBC7AF1B25F7D400CD9483 /* MainViewController.m */; };
 		EBEBC7B21B25F7D400CD9483 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBEBC7B01B25F7D400CD9483 /* MainViewController.xib */; };
+		EBF7F5EC1B3110E10056EC59 /* ActivityHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF7F5EA1B3110E10056EC59 /* ActivityHeaderTableViewCell.m */; };
+		EBF7F5ED1B3110E10056EC59 /* ActivityHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBF7F5EB1B3110E10056EC59 /* ActivityHeaderTableViewCell.xib */; };
+		EBF7F5F11B3115CD0056EC59 /* ActivityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF7F5EF1B3115CD0056EC59 /* ActivityTableViewCell.m */; };
+		EBF7F5F21B3115CD0056EC59 /* ActivityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBF7F5F01B3115CD0056EC59 /* ActivityTableViewCell.xib */; };
+		EBF7F5F61B311F120056EC59 /* TodoListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF7F5F41B311F120056EC59 /* TodoListTableViewCell.m */; };
+		EBF7F5F71B311F120056EC59 /* TodoListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBF7F5F51B311F120056EC59 /* TodoListTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +72,8 @@
 		EB0F6ECD1B264F90001AFFB9 /* PetIdentityTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PetIdentityTableViewCell.h; path = ProfileZoo/Views/PetIdentityTableViewCell.h; sourceTree = "<group>"; };
 		EB0F6ECE1B264F90001AFFB9 /* PetIdentityTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PetIdentityTableViewCell.m; path = ProfileZoo/Views/PetIdentityTableViewCell.m; sourceTree = "<group>"; };
 		EB0F6ECF1B264F90001AFFB9 /* PetIdentityTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PetIdentityTableViewCell.xib; path = ProfileZoo/Views/PetIdentityTableViewCell.xib; sourceTree = "<group>"; };
+		EB263B111B31A606008062A9 /* FileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileManager.h; path = ../../19may2015/contacts_example/Contacts/Services/FileManager.h; sourceTree = "<group>"; };
+		EB263B121B31A606008062A9 /* FileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FileManager.m; path = ../../19may2015/contacts_example/Contacts/Services/FileManager.m; sourceTree = "<group>"; };
 		EB352C491B128F060022D0F5 /* ProfileZoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProfileZoo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB352C4D1B128F060022D0F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB352C4E1B128F060022D0F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -122,6 +131,15 @@
 		EBEBC7AE1B25F7D400CD9483 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = ProfileZoo/ViewControllers/MainViewController.h; sourceTree = "<group>"; };
 		EBEBC7AF1B25F7D400CD9483 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ProfileZoo/ViewControllers/MainViewController.m; sourceTree = "<group>"; };
 		EBEBC7B01B25F7D400CD9483 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainViewController.xib; path = ProfileZoo/ViewControllers/MainViewController.xib; sourceTree = "<group>"; };
+		EBF7F5E91B3110E10056EC59 /* ActivityHeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActivityHeaderTableViewCell.h; path = ProfileZoo/Views/ActivityHeaderTableViewCell.h; sourceTree = "<group>"; };
+		EBF7F5EA1B3110E10056EC59 /* ActivityHeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActivityHeaderTableViewCell.m; path = ProfileZoo/Views/ActivityHeaderTableViewCell.m; sourceTree = "<group>"; };
+		EBF7F5EB1B3110E10056EC59 /* ActivityHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ActivityHeaderTableViewCell.xib; path = ProfileZoo/Views/ActivityHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		EBF7F5EE1B3115CD0056EC59 /* ActivityTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActivityTableViewCell.h; path = ProfileZoo/Views/ActivityTableViewCell.h; sourceTree = "<group>"; };
+		EBF7F5EF1B3115CD0056EC59 /* ActivityTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActivityTableViewCell.m; path = ProfileZoo/Views/ActivityTableViewCell.m; sourceTree = "<group>"; };
+		EBF7F5F01B3115CD0056EC59 /* ActivityTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ActivityTableViewCell.xib; path = ProfileZoo/Views/ActivityTableViewCell.xib; sourceTree = "<group>"; };
+		EBF7F5F31B311F120056EC59 /* TodoListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TodoListTableViewCell.h; path = ProfileZoo/Views/TodoListTableViewCell.h; sourceTree = "<group>"; };
+		EBF7F5F41B311F120056EC59 /* TodoListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TodoListTableViewCell.m; path = ProfileZoo/Views/TodoListTableViewCell.m; sourceTree = "<group>"; };
+		EBF7F5F51B311F120056EC59 /* TodoListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TodoListTableViewCell.xib; path = ProfileZoo/Views/TodoListTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +184,15 @@
 				EBE320121B2C5C420065000D /* MyPetsUITableViewCell.h */,
 				EBE320131B2C5C420065000D /* MyPetsUITableViewCell.m */,
 				EBE320141B2C5C420065000D /* MyPetsUITableViewCell.xib */,
+				EBF7F5E91B3110E10056EC59 /* ActivityHeaderTableViewCell.h */,
+				EBF7F5EA1B3110E10056EC59 /* ActivityHeaderTableViewCell.m */,
+				EBF7F5EB1B3110E10056EC59 /* ActivityHeaderTableViewCell.xib */,
+				EBF7F5EE1B3115CD0056EC59 /* ActivityTableViewCell.h */,
+				EBF7F5EF1B3115CD0056EC59 /* ActivityTableViewCell.m */,
+				EBF7F5F01B3115CD0056EC59 /* ActivityTableViewCell.xib */,
+				EBF7F5F31B311F120056EC59 /* TodoListTableViewCell.h */,
+				EBF7F5F41B311F120056EC59 /* TodoListTableViewCell.m */,
+				EBF7F5F51B311F120056EC59 /* TodoListTableViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -254,6 +281,8 @@
 		EBBB15CE1B129F3500924963 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				EB263B111B31A606008062A9 /* FileManager.h */,
+				EB263B121B31A606008062A9 /* FileManager.m */,
 				EBE101CB1B1D44CE0054689F /* PetDataBaseManager.h */,
 				EBE101CC1B1D44CE0054689F /* PetDataBaseManager.m */,
 			);
@@ -372,7 +401,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB352C601B128F060022D0F5 /* LaunchScreen.xib in Resources */,
+				EBF7F5ED1B3110E10056EC59 /* ActivityHeaderTableViewCell.xib in Resources */,
 				EBE0D1381B27E03900D60144 /* NewsViewController.xib in Resources */,
+				EBF7F5F71B311F120056EC59 /* TodoListTableViewCell.xib in Resources */,
 				EB352C5D1B128F060022D0F5 /* Images.xcassets in Resources */,
 				EBE0D1331B27DD9300D60144 /* PetsViewController.xib in Resources */,
 				EB0F6EC11B2643D8001AFFB9 /* tab_icon_favorites.png in Resources */,
@@ -386,6 +417,7 @@
 				EBE0D1411B27E48000D60144 /* SettingsViewController.xib in Resources */,
 				EB0F6ED11B264F90001AFFB9 /* PetIdentityTableViewCell.xib in Resources */,
 				EBE320111B2C52B30065000D /* PetProfileViewController.xib in Resources */,
+				EBF7F5F21B3115CD0056EC59 /* ActivityTableViewCell.xib in Resources */,
 				EBE15D3E1B253E0A00C4968F /* AgreementViewController.xib in Resources */,
 				EBEBC7B21B25F7D400CD9483 /* MainViewController.xib in Resources */,
 				EBE0D1281B27D43E00D60144 /* tab_icon_profile_dinosaur.png in Resources */,
@@ -407,6 +439,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBF7F5F11B3115CD0056EC59 /* ActivityTableViewCell.m in Sources */,
 				EBEBC7B11B25F7D400CD9483 /* MainViewController.m in Sources */,
 				EBEB89741B2E301A0023BBB1 /* Formatter.m in Sources */,
 				EB0F6ED01B264F90001AFFB9 /* PetIdentityTableViewCell.m in Sources */,
@@ -415,7 +448,9 @@
 				EBE805FF1B1C0951005E9265 /* Pet.m in Sources */,
 				EBE805FC1B1C07D7005E9265 /* ReminderType.m in Sources */,
 				EBE320151B2C5C420065000D /* MyPetsUITableViewCell.m in Sources */,
+				EBF7F5EC1B3110E10056EC59 /* ActivityHeaderTableViewCell.m in Sources */,
 				EB352C521B128F060022D0F5 /* AppDelegate.m in Sources */,
+				EB263B131B31A606008062A9 /* FileManager.m in Sources */,
 				EBE0D1321B27DD9300D60144 /* PetsViewController.m in Sources */,
 				EBE805F61B1C0479005E9265 /* Remider.m in Sources */,
 				EBE806021B1C0964005E9265 /* Person.m in Sources */,
@@ -426,6 +461,7 @@
 				EBE15D3D1B253E0A00C4968F /* AgreementViewController.m in Sources */,
 				EBE0D1371B27E03900D60144 /* NewsViewController.m in Sources */,
 				EBE8DB931B2BCD9700523132 /* ActivityViewController.m in Sources */,
+				EBF7F5F61B311F120056EC59 /* TodoListTableViewCell.m in Sources */,
 				EBE320101B2C52B30065000D /* PetProfileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

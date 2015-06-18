@@ -11,6 +11,7 @@
 #import "PetDataBaseManager.h"
 #import "Formatter.h"
 #import "PetProfileViewController.h"
+#import "FileManager.h"
 
 
 @interface PetsViewController ()
@@ -112,12 +113,14 @@ NSString  * kMyPetsCellIdentifier=@"kMyPetsCellIdentifier";
         myPetsCell.petBirthDateTextField.text = formattedDate;
         myPetsCell.petBreedTextField.text = pet.breed;
         
-        //    NSString *imageName = [NSString stringWithFormat:@"%ld", (long)contact.ID];
-        //    UIImage *profilePic = [FileManager loadImageWithName:imageName];
-        //    if (profilePic == nil) {
-        //        profilePic = [UIImage imageNamed:@"profile_catdog.jpeg"];
-        //    }
-        [myPetsCell.petImageView setImage:[UIImage imageNamed:@"tab_icon_profile_dinosaur"]];
+        NSString *imageName = pet.uid;
+        UIImage *profilePic = [FileManager loadImageWithName:imageName];
+        
+        if (profilePic == nil) {
+            
+            profilePic = [UIImage imageNamed:@"tab_icon_profile_dinosaur"];
+        }
+        [myPetsCell.petImageView setImage:profilePic];
     }
     else {
        UITableViewCell *petActivityLog = (UITableViewCell *) cell;

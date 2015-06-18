@@ -14,6 +14,7 @@
 #import "ActivityViewController.h"
 #import "PetProfileViewController.h"
 #import "Pet.h"
+#import "FileManager.h"
 
 @interface MainViewController ()
 
@@ -44,6 +45,13 @@ NSString * const kPetIdentityCellIdentifier = @"petIdentityCellIdentifier";
     
     UINib *cellNib = [UINib nibWithNibName:@"PetIdentityTableViewCell" bundle:nil];
     [self.remainderTablaView registerNib:cellNib forCellReuseIdentifier:kPetIdentityCellIdentifier];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    [self.remainderTablaView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -105,12 +113,13 @@ NSString * const kPetIdentityCellIdentifier = @"petIdentityCellIdentifier";
         petIdentityCell.namePetLabel.text = pet.name;
         petIdentityCell.couterLabel.text = [NSString stringWithFormat:@"%ld", (unsigned long)pet.remainders.count];
         
-        //    NSString *imageName = [NSString stringWithFormat:@"%ld", (long)contact.ID];
-        //    UIImage *profilePic = [FileManager loadImageWithName:imageName];
-        //    if (profilePic == nil) {
-        //        profilePic = [UIImage imageNamed:@"profile_catdog.jpeg"];
-        //    }
-        [petIdentityCell.petImageView setImage:[UIImage imageNamed:@"tab_icon_profile_dinosaur"]];
+        NSString *imageName = pet.uid;
+        UIImage *profilePic = [FileManager loadImageWithName:imageName];
+        
+        if (profilePic == nil) {
+              profilePic = [UIImage imageNamed:@"tab_icon_profile_dinosaur"];
+        }
+        [petIdentityCell.petImageView setImage:profilePic];
     }
     else {
         UITableViewCell *petRemaindersCell = (UITableViewCell *) cell;
