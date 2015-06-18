@@ -18,6 +18,8 @@
 		EB352C5D1B128F060022D0F5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB352C5C1B128F060022D0F5 /* Images.xcassets */; };
 		EB352C601B128F060022D0F5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB352C5E1B128F060022D0F5 /* LaunchScreen.xib */; };
 		EB352C6C1B128F070022D0F5 /* ProfileZooTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB352C6B1B128F070022D0F5 /* ProfileZooTests.m */; };
+		EB491F8D1B326EB700E2B066 /* PersonEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = EB491F8C1B326EB700E2B066 /* PersonEntity.m */; };
+		EB491F901B326EB800E2B066 /* PetEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = EB491F8F1B326EB800E2B066 /* PetEntity.m */; };
 		EBE0D1281B27D43E00D60144 /* tab_icon_profile_dinosaur.png in Resources */ = {isa = PBXBuildFile; fileRef = EBE0D1271B27D43E00D60144 /* tab_icon_profile_dinosaur.png */; };
 		EBE0D12B1B27DB5400D60144 /* tab_icon_appointment_reminders_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = EBE0D1291B27DB5400D60144 /* tab_icon_appointment_reminders_filled.png */; };
 		EBE0D12C1B27DB5400D60144 /* tab_icon_appointment reminders.png in Resources */ = {isa = PBXBuildFile; fileRef = EBE0D12A1B27DB5400D60144 /* tab_icon_appointment reminders.png */; };
@@ -85,6 +87,10 @@
 		EB352C651B128F070022D0F5 /* ProfileZooTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProfileZooTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB352C6A1B128F070022D0F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB352C6B1B128F070022D0F5 /* ProfileZooTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileZooTests.m; sourceTree = "<group>"; };
+		EB491F8B1B326EB700E2B066 /* PersonEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PersonEntity.h; path = ProfileZoo/CoreData/PersonEntity.h; sourceTree = "<group>"; };
+		EB491F8C1B326EB700E2B066 /* PersonEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PersonEntity.m; path = ProfileZoo/CoreData/PersonEntity.m; sourceTree = "<group>"; };
+		EB491F8E1B326EB800E2B066 /* PetEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PetEntity.h; path = ProfileZoo/CoreData/PetEntity.h; sourceTree = "<group>"; };
+		EB491F8F1B326EB800E2B066 /* PetEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PetEntity.m; path = ProfileZoo/CoreData/PetEntity.m; sourceTree = "<group>"; };
 		EBE0D1271B27D43E00D60144 /* tab_icon_profile_dinosaur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tab_icon_profile_dinosaur.png; path = Images/tab_icon_profile_dinosaur.png; sourceTree = "<group>"; };
 		EBE0D1291B27DB5400D60144 /* tab_icon_appointment_reminders_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tab_icon_appointment_reminders_filled.png; path = Images/tab_icon_appointment_reminders_filled.png; sourceTree = "<group>"; };
 		EBE0D12A1B27DB5400D60144 /* tab_icon_appointment reminders.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tab_icon_appointment reminders.png"; path = "Images/tab_icon_appointment reminders.png"; sourceTree = "<group>"; };
@@ -200,6 +206,7 @@
 		EB352C401B128F060022D0F5 = {
 			isa = PBXGroup;
 			children = (
+				EB491F8A1B326C0900E2B066 /* CoreData */,
 				EB0F6ECC1B264F1E001AFFB9 /* Views */,
 				EBE15D391B253D0300C4968F /* ViewControllers */,
 				EBBB15CE1B129F3500924963 /* Services */,
@@ -257,6 +264,17 @@
 				EB352C6A1B128F070022D0F5 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB491F8A1B326C0900E2B066 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				EB491F8E1B326EB800E2B066 /* PetEntity.h */,
+				EB491F8F1B326EB800E2B066 /* PetEntity.m */,
+				EB491F8B1B326EB700E2B066 /* PersonEntity.h */,
+				EB491F8C1B326EB700E2B066 /* PersonEntity.m */,
+			);
+			name = CoreData;
 			sourceTree = "<group>";
 		};
 		EBA0FAC51B129AD100E8196A /* Model */ = {
@@ -441,6 +459,7 @@
 			files = (
 				EBF7F5F11B3115CD0056EC59 /* ActivityTableViewCell.m in Sources */,
 				EBEBC7B11B25F7D400CD9483 /* MainViewController.m in Sources */,
+				EB491F901B326EB800E2B066 /* PetEntity.m in Sources */,
 				EBEB89741B2E301A0023BBB1 /* Formatter.m in Sources */,
 				EB0F6ED01B264F90001AFFB9 /* PetIdentityTableViewCell.m in Sources */,
 				EBEB89771B2E47E20023BBB1 /* KConstants.m in Sources */,
@@ -455,6 +474,7 @@
 				EBE805F61B1C0479005E9265 /* Remider.m in Sources */,
 				EBE806021B1C0964005E9265 /* Person.m in Sources */,
 				EB352C4F1B128F060022D0F5 /* main.m in Sources */,
+				EB491F8D1B326EB700E2B066 /* PersonEntity.m in Sources */,
 				EBE101CD1B1D44CE0054689F /* PetDataBaseManager.m in Sources */,
 				EBE805F91B1C078D005E9265 /* ActivityLog.m in Sources */,
 				EBE0D1401B27E48000D60144 /* SettingsViewController.m in Sources */,
