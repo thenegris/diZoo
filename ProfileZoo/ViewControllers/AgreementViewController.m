@@ -12,7 +12,10 @@
 #import "NewsViewController.h"
 #import "SettingsViewController.h"
 
-const CGFloat leftMargin = 20;
+const CGFloat kLeftMargin = 30;
+const CGFloat kRightMargin = 20;
+const CGFloat kTopMargin = 40;
+const CGFloat kHeight = 40;
 
 @interface AgreementViewController ()
 @property (nonatomic, strong) MainViewController *mainViewController;
@@ -20,18 +23,25 @@ const CGFloat leftMargin = 20;
 
 @implementation AgreementViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 //    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 60, 280, 40)];
 //    titleLabel.text = @"DiZoo";
     //titleLabel.center;
+    CGRect screenBounds = [[UIScreen mainScreen] bounds];
     
+    CGFloat posX = screenBounds.origin.x;
+    CGFloat posY= screenBounds.origin.y;
+    CGFloat height = screenBounds.size.height;
+    CGFloat width = screenBounds.size.width;
     
-    UILabel *subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(leftMargin, 60, 280, 40)];
+    UILabel *subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(posX+kLeftMargin, posY+kTopMargin, width-kRightMargin, kHeight)];
     subtitleLabel.text = @"Terminos y Condiciones";
+    CGRect labelBounds = [subtitleLabel bounds];
+    UITextView *licAgreementTextView = [[UITextView alloc] initWithFrame:CGRectMake(labelBounds.origin.x,labelBounds.origin.y+labelBounds.size.height+kTopMargin,width-kRightMargin,300)];
     
-    UITextView *licAgreementTextView = [[UITextView alloc] initWithFrame:CGRectMake(leftMargin,100,340,300)];
     licAgreementTextView.font = [UIFont fontWithName:@"Helvetica" size:15];
     licAgreementTextView.editable=NO;
     licAgreementTextView.text=@"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? ";

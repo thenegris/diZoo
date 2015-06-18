@@ -18,6 +18,8 @@
 		EB352C5D1B128F060022D0F5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB352C5C1B128F060022D0F5 /* Images.xcassets */; };
 		EB352C601B128F060022D0F5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB352C5E1B128F060022D0F5 /* LaunchScreen.xib */; };
 		EB352C6C1B128F070022D0F5 /* ProfileZooTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB352C6B1B128F070022D0F5 /* ProfileZooTests.m */; };
+		EB491F941B327E1E00E2B066 /* LicenseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB491F921B327E1E00E2B066 /* LicenseViewController.m */; };
+		EB491F951B327E1E00E2B066 /* LicenseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB491F931B327E1E00E2B066 /* LicenseViewController.xib */; };
 		EBE0D1281B27D43E00D60144 /* tab_icon_profile_dinosaur.png in Resources */ = {isa = PBXBuildFile; fileRef = EBE0D1271B27D43E00D60144 /* tab_icon_profile_dinosaur.png */; };
 		EBE0D12B1B27DB5400D60144 /* tab_icon_appointment_reminders_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = EBE0D1291B27DB5400D60144 /* tab_icon_appointment_reminders_filled.png */; };
 		EBE0D12C1B27DB5400D60144 /* tab_icon_appointment reminders.png in Resources */ = {isa = PBXBuildFile; fileRef = EBE0D12A1B27DB5400D60144 /* tab_icon_appointment reminders.png */; };
@@ -31,8 +33,6 @@
 		EBE0D1401B27E48000D60144 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE0D13E1B27E48000D60144 /* SettingsViewController.m */; };
 		EBE0D1411B27E48000D60144 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBE0D13F1B27E48000D60144 /* SettingsViewController.xib */; };
 		EBE101CD1B1D44CE0054689F /* PetDataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE101CC1B1D44CE0054689F /* PetDataBaseManager.m */; };
-		EBE15D3D1B253E0A00C4968F /* AgreementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE15D3B1B253E0A00C4968F /* AgreementViewController.m */; };
-		EBE15D3E1B253E0A00C4968F /* AgreementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBE15D3C1B253E0A00C4968F /* AgreementViewController.xib */; };
 		EBE320101B2C52B30065000D /* PetProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE3200E1B2C52B30065000D /* PetProfileViewController.m */; };
 		EBE320111B2C52B30065000D /* PetProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBE3200F1B2C52B30065000D /* PetProfileViewController.xib */; };
 		EBE320151B2C5C420065000D /* MyPetsUITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE320131B2C5C420065000D /* MyPetsUITableViewCell.m */; };
@@ -85,6 +85,9 @@
 		EB352C651B128F070022D0F5 /* ProfileZooTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProfileZooTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB352C6A1B128F070022D0F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB352C6B1B128F070022D0F5 /* ProfileZooTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileZooTests.m; sourceTree = "<group>"; };
+		EB491F911B327E1E00E2B066 /* LicenseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LicenseViewController.h; path = ProfileZoo/ViewControllers/LicenseViewController.h; sourceTree = "<group>"; };
+		EB491F921B327E1E00E2B066 /* LicenseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LicenseViewController.m; path = ProfileZoo/ViewControllers/LicenseViewController.m; sourceTree = "<group>"; };
+		EB491F931B327E1E00E2B066 /* LicenseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LicenseViewController.xib; path = ProfileZoo/ViewControllers/LicenseViewController.xib; sourceTree = "<group>"; };
 		EBE0D1271B27D43E00D60144 /* tab_icon_profile_dinosaur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tab_icon_profile_dinosaur.png; path = Images/tab_icon_profile_dinosaur.png; sourceTree = "<group>"; };
 		EBE0D1291B27DB5400D60144 /* tab_icon_appointment_reminders_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tab_icon_appointment_reminders_filled.png; path = Images/tab_icon_appointment_reminders_filled.png; sourceTree = "<group>"; };
 		EBE0D12A1B27DB5400D60144 /* tab_icon_appointment reminders.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tab_icon_appointment reminders.png"; path = "Images/tab_icon_appointment reminders.png"; sourceTree = "<group>"; };
@@ -102,9 +105,6 @@
 		EBE0D13F1B27E48000D60144 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SettingsViewController.xib; path = ProfileZoo/ViewControllers/SettingsViewController.xib; sourceTree = "<group>"; };
 		EBE101CB1B1D44CE0054689F /* PetDataBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PetDataBaseManager.h; path = ProfileZoo/Services/PetDataBaseManager.h; sourceTree = "<group>"; };
 		EBE101CC1B1D44CE0054689F /* PetDataBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PetDataBaseManager.m; path = ProfileZoo/Services/PetDataBaseManager.m; sourceTree = "<group>"; };
-		EBE15D3A1B253E0A00C4968F /* AgreementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AgreementViewController.h; path = ProfileZoo/ViewControllers/AgreementViewController.h; sourceTree = "<group>"; };
-		EBE15D3B1B253E0A00C4968F /* AgreementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AgreementViewController.m; path = ProfileZoo/ViewControllers/AgreementViewController.m; sourceTree = "<group>"; };
-		EBE15D3C1B253E0A00C4968F /* AgreementViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AgreementViewController.xib; path = ProfileZoo/ViewControllers/AgreementViewController.xib; sourceTree = "<group>"; };
 		EBE3200D1B2C52B30065000D /* PetProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PetProfileViewController.h; path = ProfileZoo/ViewControllers/PetProfileViewController.h; sourceTree = "<group>"; };
 		EBE3200E1B2C52B30065000D /* PetProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PetProfileViewController.m; path = ProfileZoo/ViewControllers/PetProfileViewController.m; sourceTree = "<group>"; };
 		EBE3200F1B2C52B30065000D /* PetProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PetProfileViewController.xib; path = ProfileZoo/ViewControllers/PetProfileViewController.xib; sourceTree = "<group>"; };
@@ -292,9 +292,6 @@
 		EBE15D391B253D0300C4968F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				EBE15D3A1B253E0A00C4968F /* AgreementViewController.h */,
-				EBE15D3B1B253E0A00C4968F /* AgreementViewController.m */,
-				EBE15D3C1B253E0A00C4968F /* AgreementViewController.xib */,
 				EBEBC7AE1B25F7D400CD9483 /* MainViewController.h */,
 				EBEBC7AF1B25F7D400CD9483 /* MainViewController.m */,
 				EBEBC7B01B25F7D400CD9483 /* MainViewController.xib */,
@@ -315,6 +312,9 @@
 				EBE3200F1B2C52B30065000D /* PetProfileViewController.xib */,
 				EBEB89721B2E301A0023BBB1 /* Formatter.h */,
 				EBEB89731B2E301A0023BBB1 /* Formatter.m */,
+				EB491F911B327E1E00E2B066 /* LicenseViewController.h */,
+				EB491F921B327E1E00E2B066 /* LicenseViewController.m */,
+				EB491F931B327E1E00E2B066 /* LicenseViewController.xib */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -405,6 +405,7 @@
 				EBE0D1381B27E03900D60144 /* NewsViewController.xib in Resources */,
 				EBF7F5F71B311F120056EC59 /* TodoListTableViewCell.xib in Resources */,
 				EB352C5D1B128F060022D0F5 /* Images.xcassets in Resources */,
+				EB491F951B327E1E00E2B066 /* LicenseViewController.xib in Resources */,
 				EBE0D1331B27DD9300D60144 /* PetsViewController.xib in Resources */,
 				EB0F6EC11B2643D8001AFFB9 /* tab_icon_favorites.png in Resources */,
 				EBE0D12E1B27DD4900D60144 /* tab_icon_footprint_filled.png in Resources */,
@@ -418,7 +419,6 @@
 				EB0F6ED11B264F90001AFFB9 /* PetIdentityTableViewCell.xib in Resources */,
 				EBE320111B2C52B30065000D /* PetProfileViewController.xib in Resources */,
 				EBF7F5F21B3115CD0056EC59 /* ActivityTableViewCell.xib in Resources */,
-				EBE15D3E1B253E0A00C4968F /* AgreementViewController.xib in Resources */,
 				EBEBC7B21B25F7D400CD9483 /* MainViewController.xib in Resources */,
 				EBE0D1281B27D43E00D60144 /* tab_icon_profile_dinosaur.png in Resources */,
 				EBE320161B2C5C420065000D /* MyPetsUITableViewCell.xib in Resources */,
@@ -458,8 +458,8 @@
 				EBE101CD1B1D44CE0054689F /* PetDataBaseManager.m in Sources */,
 				EBE805F91B1C078D005E9265 /* ActivityLog.m in Sources */,
 				EBE0D1401B27E48000D60144 /* SettingsViewController.m in Sources */,
-				EBE15D3D1B253E0A00C4968F /* AgreementViewController.m in Sources */,
 				EBE0D1371B27E03900D60144 /* NewsViewController.m in Sources */,
+				EB491F941B327E1E00E2B066 /* LicenseViewController.m in Sources */,
 				EBE8DB931B2BCD9700523132 /* ActivityViewController.m in Sources */,
 				EBF7F5F61B311F120056EC59 /* TodoListTableViewCell.m in Sources */,
 				EBE320101B2C52B30065000D /* PetProfileViewController.m in Sources */,

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "AgreementViewController.h"
+#import "LicenseViewController.h"
 #import "MainViewController.h"
 
 
@@ -21,7 +21,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    AgreementViewController *initialViewController = [[AgreementViewController alloc] initWithNibName:@"AgreementViewController" bundle:nil];
+    LicenseViewController *initialViewController = [[LicenseViewController alloc] initWithNibName:@"LicenseViewController" bundle:nil];
     
     
     CGRect frame = [UIScreen mainScreen].bounds;
@@ -30,23 +30,6 @@
     [window makeKeyAndVisible];
     self.window = window;
     
-    /*
-    MainViewController *mainViewController = [[MainViewController alloc] init];
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:initialViewController];
-    
-   
-    UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    [tabBarController setViewControllers:@[navController,mainViewController]];
-     CGRect frame = [UIScreen mainScreen].bounds;
-     UIWindow *window = [[UIWindow alloc] initWithFrame:frame];
-    window.rootViewController = tabBarController;
-    [window makeKeyAndVisible];
-    self.window = window;
-    
-     */
-    
-   
-
     return YES;
 }
 
