@@ -11,7 +11,7 @@
 
 @implementation ActivityHeaderTableViewCell
 
-NSInteger const kDays = 30; 
+static NSInteger const kDays = 30;
 
 - (void)awakeFromNib {
     // Initialization code

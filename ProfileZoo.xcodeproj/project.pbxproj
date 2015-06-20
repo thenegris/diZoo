@@ -20,6 +20,7 @@
 		EB352C6C1B128F070022D0F5 /* ProfileZooTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB352C6B1B128F070022D0F5 /* ProfileZooTests.m */; };
 		EB491F941B327E1E00E2B066 /* LicenseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB491F921B327E1E00E2B066 /* LicenseViewController.m */; };
 		EB491F951B327E1E00E2B066 /* LicenseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB491F931B327E1E00E2B066 /* LicenseViewController.xib */; };
+		EBD05C7A1B32FFEA00589A70 /* ActivityHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF7F5EA1B3110E10056EC59 /* ActivityHeaderTableViewCell.m */; };
 		EBE0D1281B27D43E00D60144 /* tab_icon_profile_dinosaur.png in Resources */ = {isa = PBXBuildFile; fileRef = EBE0D1271B27D43E00D60144 /* tab_icon_profile_dinosaur.png */; };
 		EBE0D12B1B27DB5400D60144 /* tab_icon_appointment_reminders_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = EBE0D1291B27DB5400D60144 /* tab_icon_appointment_reminders_filled.png */; };
 		EBE0D12C1B27DB5400D60144 /* tab_icon_appointment reminders.png in Resources */ = {isa = PBXBuildFile; fileRef = EBE0D12A1B27DB5400D60144 /* tab_icon_appointment reminders.png */; };
@@ -48,7 +49,6 @@
 		EBEB89771B2E47E20023BBB1 /* KConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = EBEB89761B2E47E20023BBB1 /* KConstants.m */; };
 		EBEBC7B11B25F7D400CD9483 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBEBC7AF1B25F7D400CD9483 /* MainViewController.m */; };
 		EBEBC7B21B25F7D400CD9483 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBEBC7B01B25F7D400CD9483 /* MainViewController.xib */; };
-		EBF7F5EC1B3110E10056EC59 /* ActivityHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF7F5EA1B3110E10056EC59 /* ActivityHeaderTableViewCell.m */; };
 		EBF7F5ED1B3110E10056EC59 /* ActivityHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBF7F5EB1B3110E10056EC59 /* ActivityHeaderTableViewCell.xib */; };
 		EBF7F5F11B3115CD0056EC59 /* ActivityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF7F5EF1B3115CD0056EC59 /* ActivityTableViewCell.m */; };
 		EBF7F5F21B3115CD0056EC59 /* ActivityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBF7F5F01B3115CD0056EC59 /* ActivityTableViewCell.xib */; };
@@ -448,7 +448,6 @@
 				EBE805FF1B1C0951005E9265 /* Pet.m in Sources */,
 				EBE805FC1B1C07D7005E9265 /* ReminderType.m in Sources */,
 				EBE320151B2C5C420065000D /* MyPetsUITableViewCell.m in Sources */,
-				EBF7F5EC1B3110E10056EC59 /* ActivityHeaderTableViewCell.m in Sources */,
 				EB352C521B128F060022D0F5 /* AppDelegate.m in Sources */,
 				EB263B131B31A606008062A9 /* FileManager.m in Sources */,
 				EBE0D1321B27DD9300D60144 /* PetsViewController.m in Sources */,
@@ -457,6 +456,7 @@
 				EB352C4F1B128F060022D0F5 /* main.m in Sources */,
 				EBE101CD1B1D44CE0054689F /* PetDataBaseManager.m in Sources */,
 				EBE805F91B1C078D005E9265 /* ActivityLog.m in Sources */,
+				EBD05C7A1B32FFEA00589A70 /* ActivityHeaderTableViewCell.m in Sources */,
 				EBE0D1401B27E48000D60144 /* SettingsViewController.m in Sources */,
 				EBE0D1371B27E03900D60144 /* NewsViewController.m in Sources */,
 				EB491F941B327E1E00E2B066 /* LicenseViewController.m in Sources */,

@@ -26,8 +26,8 @@
 
 @implementation PetProfileViewController
 
-NSInteger const kNumberOfPickers = 2;
-NSInteger const kDays = 14600; //40 years aprox
+static NSInteger const kNumberOfPickers = 2;
+static NSInteger const kDays = 14600; //40 years aprox
 KConstants *constants; 
 
 
